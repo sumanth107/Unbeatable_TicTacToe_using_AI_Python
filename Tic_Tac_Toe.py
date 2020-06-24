@@ -1,12 +1,9 @@
 import pygame
 
 pygame.init()
-pygame.mixer.init()
 screen = pygame.display.set_mode((500, 500))
 pygame.display.set_caption('TIC TAC TOE')
 font = pygame.font.Font('freesansbold.ttf', 40)
-pygame.mixer.music.load('Astronomia.mp3')
-pygame.mixer.music.play(-1)
 
 black = (0, 0, 0)
 green = (0, 255, 0)
