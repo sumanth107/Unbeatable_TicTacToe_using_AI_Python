@@ -147,10 +147,10 @@ def minimax(state, depth, piece):
         new_state[r][c] = None
         score[0], score[1] = r, c
         if piece == 'O':
-            if score[2] >= best[2]:
+            if score[2] > best[2]:
                 best = score
         if piece == 'X':
-            if score[2] <= best[2]:
+            if score[2] < best[2]:
                 best = score
     return best
 
