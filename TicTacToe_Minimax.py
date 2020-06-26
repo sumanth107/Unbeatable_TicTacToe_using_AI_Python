@@ -117,17 +117,17 @@ def d(state):
 
 def minimax(state, depth, piece):
     if piece == 'O':
-        best = [-1, -1, -11]
+        best = [-1, -1, -20]
     else:
-        best = [-1, -1, 11]
+        best = [-1, -1, 20]
 
     if depth == 0 or (win(state) is not None):
         if win(state) == 'X':
-            score = -1
-            return [-1, -1, score-depth]
+            score = -10
+            return [-1, -1, score]
         elif win(state) == 'O':
             score = 10
-            return [-1, -1, score+depth]
+            return [-1, -1, score]
         else:
             score = 0
             return [-1, -1, score]
