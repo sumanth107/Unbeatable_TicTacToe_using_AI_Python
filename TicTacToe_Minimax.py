@@ -127,7 +127,7 @@ def minimax(state, depth, piece):
             return [-1, -1, score-depth]
         elif win(state) == 'O':
             score = 10
-            return [-1, -1, score]
+            return [-1, -1, score+depth]
         else:
             score = 0
             return [-1, -1, score]
