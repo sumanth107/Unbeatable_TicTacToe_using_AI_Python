@@ -77,7 +77,7 @@ def win(state):
     w = None
     for i in range(0, 3):
         if (state[i][0] == state[i][1] == state[i][2]) and (state[i][0] is not None):
-            w = state[row][0]
+            w = state[i][0]
             break
 
     for j in range(0, 3):
