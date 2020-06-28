@@ -1,3 +1,5 @@
+#@uthor : Sumanth Nethi
+#Date : 20-06-2020
 import pygame
 
 pygame.init()
