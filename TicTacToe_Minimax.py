@@ -91,7 +91,7 @@ def win(state):
     if (state[0][2] == state[1][1] == state[2][0]) and (state[0][2] is not None):
         w = state[0][2]
 
-    if all(state[i][j] is not None for i in range(3) for j in range(3)):
+    if all(state[i][j] is not None for i in range(3) for j in range(3)) and w is None:
         w = 'Draw'
     return w
 
